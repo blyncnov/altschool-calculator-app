@@ -1,0 +1,114 @@
+// calculator SCSS body styling  ----->
+.calculator-body {
+  position: relative;
+  width: 220px;
+  // height: 100vh;
+  padding: 2em .5em;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: grid;
+  row-gap: 10px;
+  color: #333;
+  grid-template-rows: 1fr 3fr;
+
+  @media (max-width: 768px) {
+    width: 250px;
+  }
+}
+
+// Screen SCSS Styling ----->
+.calculator-screen {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: flex-end;
+
+  .calculator-screen-wrapper {
+    width: 100%;
+    max-height: 80px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: end !important;
+    padding: 0.5em;
+    box-shadow: rgb(204 219 232) 3px 3px 6px 0px inset,
+      rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
+
+    .calculator-multi-op {
+      font-weight: 600;
+      color: #262626;
+    }
+
+    .calculator-final-answer {
+      color: #9379f2;
+      font-weight: 600;
+      margin-top: 3px;
+    }
+
+    .calculator-answer-span {
+      color: rgb(115, 107, 107);
+      opacity: 0.5;
+    }
+  }
+}
+
+// Keypads SCSS Styling  ----->
+.calculator-keypads-container {
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  padding-bottom: 0.5em;
+
+  .group-button {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    color: #333;
+    grid-template-columns: repeat(4, 1fr);
+
+    button:nth-child(1),
+    button:nth-child(2),
+    button:nth-child(3) {
+      background-color: rgba(242, 172, 41, 0.15);
+      color: #f2ac29;
+    }
+
+    button:nth-child(4),
+    button:nth-child(8),
+    button:nth-child(12) {
+      background-color: rgba(144, 46, 242, 0.15);
+      color: #8129d9;
+    }
+
+    button:nth-child(16) {
+      background-color: #8129d9;
+      color: white;
+      height: 100%;
+      grid-row-start: 4;
+      grid-row-end: 6;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      border-radius: 3px !important;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px 1px,
+        rgba(0, 0, 0, 0.1) 0px 3px 6px 1px !important;
+    }
+
+    button {
+      width: 100%;
+      text-align: center;
+      border-radius: 10%;
+      border: none;
+      padding: 1em;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      cursor: pointer;
+
+      &:active {
+        background-color: rgba(83, 80, 86, 0.05);
+      }
+    }
+  }
+}
