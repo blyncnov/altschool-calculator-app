@@ -3,7 +3,7 @@
   position: relative;
   width: 220px;
   // height: 100vh;
-  padding: 2em .5em;
+  padding: 2em 0.5em;
   border-radius: 8px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
@@ -27,7 +27,7 @@
 
   .calculator-screen-wrapper {
     width: 100%;
-    max-height: 80px;
+    height: 70px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -40,17 +40,19 @@
     .calculator-multi-op {
       font-weight: 600;
       color: #262626;
+      font-size: 16px;
     }
 
     .calculator-final-answer {
       color: #9379f2;
       font-weight: 600;
-      margin-top: 3px;
+      margin-top: 10px;
+      font-size: 14px;
     }
 
     .calculator-answer-span {
       color: rgb(115, 107, 107);
-      opacity: 0.5;
+      opacity: 0.2;
     }
   }
 }
