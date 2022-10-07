@@ -4,9 +4,8 @@
 ## Demo links
 Link to demo project [https://wpost.netlify.app](https://wpost.netlify.app).
 
-## Wider view
-
-![localhost_3000_](https://user-images.githubusercontent.com/66668114/128180494-6c9ce630-b18f-4ddd-b452-2ceadac533cd.png)
+## Demo view
+![Screenshot 2022-10-07 at 15 10 42](https://user-images.githubusercontent.com/66668114/194573798-58d5e17e-3635-4d74-87e3-cb94484f9fb9.png)
 
 
 ## Built With
